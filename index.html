@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Generator haseł</title>
+	</head>
+	<body>
+		<fieldset>
+			<form action="generator.php" method="POST">
+			
+			<fieldset>
+				<legend><b>Password generator</b></legend>
+				<label>How much the signs<br>
+				<input type="text" maxlength="2" name="ilznak" placeholder="1-99" />
+				</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend><b>Score option</b></legend>
+				<input type="radio" value="numbers" name="choise" checked="checked"  />
+				numbers <b>(0-9)</b><br>
+				
+				<input type="radio" value="letters" name="choise" />
+				letters <b>(a-z)</b><br>
+				
+				<input type="radio" value="bigletters" name="choise" />
+				capital letters <b>(A-Z)</b><br>
+				
+				<input type="radio" value="numbersANDletters" name="choise" />
+				numbers <b>(0-9)</b> and letters <b>(a-z)</b><br>
+				
+				<input type="radio" value="numbersANDbigletters" name="choise" />
+				numbers <b>(0-9)</b> and capital letters<b>(A-Z)</b>
+				<br>
+				
+				<input type="radio" value="lettersANDbigletters" name="choise" />
+				letters <b>(a-z)</b> and capital letters <b>(A-Z)</b><br>
+
+				<input type="radio" value="numbersANDlettersANDbigletters" name="choise" />
+				numbers <b>(0-9)</b>, letters <b>(a-z)</b> and capital letters <b>(A-Z)</b><br>
+			
+			</fieldset>
+				<input type="submit" value="Wygeneruj hasło">
+		</form>
+		</fieldset>	
+			</legend>
+		</fieldset>
+	</body>
+</html>
